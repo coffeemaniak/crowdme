@@ -13,11 +13,11 @@ const del = require("del");
 gulp.task('css', function () {
     return gulp.src('source/less/style.less')
         .pipe(plumber())
-        .pipe(sourcemap.init())
+        .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(csso())
         .pipe(rename("style.min.css"))
-        .pipe(sourcemap.write("."))
+        .pipe(sourcemaps.write("."))
         .pipe(gulp.dest("build/css"))
         .pipe(server.stream());
 });
