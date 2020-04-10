@@ -50,37 +50,37 @@
             </p>
         </section>
         <section class="tabs">
-            <ul class="tabs__header">
-                <li class="tabs__item">Simple</li>
-                <li class="tabs__item">Transparent</li>
-                <li class="tabs__item">Collaborate</li>
-            </ul>
+            <ol class="tabs__header">
+                <li class="tabs__item active" data-id="1">Simple</li>
+                <li class="tabs__item" data-id="2">Transparent</li>
+                <li class="tabs__item" data-id="3">Collaborate</li>
+            </ol>
             <div class="tabs__body">
-                <div class="tabs__content">
-                    <h3>
+                <div class="tabs__content tabs__content--active">
+                    <h3 class="tabs__content-title tabs__content-title--simple">
                         Browse project, like booking a hotel online!
                     </h3>
-                    <p>
+                    <p class="tabs__content-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio quidem totam
                         est debitis doloribus voluptas? Expedita vero ipsum, magni rerum ducimus velit
                         delectus veniam ullam. Harum modi distinctio vel.
                     </p>
                 </div>
                 <div class="tabs__content">
-                    <h3>
-                        Browse project, like booking a hotel online!
+                    <h3 class="tabs__content-title tabs__content-title--transp">
+                        Transprent and easy!
                     </h3>
-                    <p>
+                    <p class="tabs__content-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio quidem totam
                         est debitis doloribus voluptas? Expedita vero ipsum, magni rerum ducimus velit
                         delectus veniam ullam. Harum modi distinctio vel.
                     </p>
                 </div>
                 <div class="tabs__content">
-                    <h3>
-                        Browse project, like booking a hotel online!
+                    <h3 class="tabs__content-title tabs__content-title--coll">
+                        Join our wonderful team!
                     </h3>
-                    <p>
+                    <p class="tabs__content-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio quidem totam
                         est debitis doloribus voluptas? Expedita vero ipsum, magni rerum ducimus velit
                         delectus veniam ullam. Harum modi distinctio vel.
@@ -253,6 +253,7 @@
             </div>
         </footer>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
