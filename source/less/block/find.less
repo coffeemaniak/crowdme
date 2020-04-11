@@ -1,0 +1,86 @@
+.find {
+    display: flex;
+    width: 100%;
+}
+
+.find__prop,
+.find__buy {
+    width: 50%;
+    display: block;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.find__prop {
+    background-color: #e2f8ff;
+    padding-left: 318px;
+    padding-right: 65px;
+}
+
+.find__buy {
+    background-color: #f5f9eb;
+    padding-right: 135px;
+    padding-left: 248px;
+}
+
+.find__title {
+    font-size: 23px;
+    line-height: 30px;
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+
+.find__title--prop::before {
+    content: url("../img/chair.png");
+    width: 135px;
+    height: 120px;
+    position: absolute;
+    right: 318px;
+    top: 23px;
+}
+
+.find__title--buy::before {
+    content: url("../img/pocket.png");
+    width: 106px;
+    height: 100px;
+    position: absolute;
+    right: 320px;
+    top: 44px;
+}
+
+.find__text {
+    color: black;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.find__button {
+    width: 188px;
+    height: 52px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.find__button--member {
+    background-color: #26a6d1;
+}
+
+.find__button--member:hover {
+    background-color: #1eacdc;
+    box-shadow: 0 0 5px 5px #8fd6ee;
+}
+
+.find__button--project {
+    background-color: #add136;
+}
+
+.find__button--project:hover {
+    background-color: #bedb61;
+    box-shadow: 0 0 5px 5px #ccd9a3;
+}
