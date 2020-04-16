@@ -1,8 +1,13 @@
 .card {
     width: 980px;
     margin: 0 auto;
+    // margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.card__item:hover {
+    box-shadow: 0 0 5px 5px lightgray;
 }
 
 .card__item {
@@ -11,7 +16,7 @@
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
-    border-radius: 0 0 7px 7px;
+    border-radius: 7px 7px 7px 7px;
 }
 
 .card__img {
@@ -48,4 +53,95 @@
 
 .card__price-value {
     font-weight: 600;
+}
+
+.card__title {
+    font-size: 17px;
+    color: black;
+}
+
+.card__title-bold {
+    text-transform: uppercase;
+}
+
+.card__description {
+    padding-left: 25px;
+    padding-right: 30px;
+    // padding-bottom: 25px;
+    padding-top: 8px;
+}
+
+.card__text {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.card__range {
+    width: 252px;
+    height: 16px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card__range-green {
+    display: block;
+    height: 16px;
+    border-radius: 10px 0 0 10px;
+    // width: 10%;
+    background-color: #add136;
+}
+
+.card__range-green--ten {
+    width: 10%;
+}
+
+.card__range-green--sixty {
+    width: 60%;
+}
+
+.card__info {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Open Sans";
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__left,
+.card__right {
+    display: block;
+}
+
+.card__more {
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    padding-left: 110px;
+    position: relative;
+}
+
+.card__more::before {
+    content: "";
+    display: block;
+    width: 252px;
+    height: 2px;
+    background-color: #e3e3e3;
+    margin-bottom: 35px;
+    left: -85px;
+    position: relative;
+}
+
+.card__more::after {
+    content: url("../img/arrow.png");
+    width: 12px;
+    height: 16px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
 }
