@@ -30,17 +30,7 @@
     padding: 20px;
     position: relative;
     background-color: white;
-    // left: 15%;
     top: 100px;
-}
-
-.reviewes__quote--left {
-    left: 15%;
-}
-
-.reviewes__quote--right {
-    left: 55%;
-    top: -105px;
 }
 
 .reviewes__quote::before,
@@ -73,11 +63,33 @@
 }
 
 .reviews__photo {
-    position: relative;
     border-radius: 5px;
 }
 
-.reviews__photo--first {
-    left: 15%;
-    top: 114px;
+.reviews__block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 400px;
+}
+
+.rewiews__author {
+    display: block;
+    width: 400px;
+    margin-top: 115px;
+}
+
+.reviews__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.reviews__name {
+    font-size: 15px;
+    color: black;
+    display: inline-block;
+    position: relative;
+    top: -16px;
 }
