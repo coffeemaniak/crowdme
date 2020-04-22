@@ -10,4 +10,4 @@
             content[i].classList.add('tabs__content--active');
             this.classList.add('active');
         });
-    };
+    }
